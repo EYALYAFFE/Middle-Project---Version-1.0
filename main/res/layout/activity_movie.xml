@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context="com.example.user.MiddleProject.MovieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/titleMOVIEACT"
+            android:layout_width="221dp"
+            android:layout_height="43dp"
+            android:layout_margin="20dp"
+            android:layout_weight="4"
+            android:background="@drawable/edittextstyle"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/yearMOVIEACT"
+            android:layout_width="83dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittextstyle"
+            android:ems="10"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:hint="Year"
+            android:inputType="textPersonName|numberDecimal"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/plotMOVIEACT"
+            android:scrollHorizontally="false"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:width="0dip"
+            android:background="@drawable/edittextstyle"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Plot"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:layout_weight="0.90" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/urlMOVIEACT"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.17"
+            android:background="@drawable/edittextstyle"
+            android:ems="10"
+            android:hint="Url"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+        <Button
+            android:id="@+id/showMOVIEACT"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/Show_movie" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/captureBTNMOVIE"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="false"
+            android:elevation="0dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_weight="5.75"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/posterIVMOVIEACT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveMOVIEACT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/cancelMOVIEACT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+</LinearLayout>

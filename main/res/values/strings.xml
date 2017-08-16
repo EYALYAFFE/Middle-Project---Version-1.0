@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Middle Project</string>
+    <string name="delete">Delete</string>
+    <string name="exit">Exit app</string>
+    <string name="Show_movie">show</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string name="go">go</string>
+
+</resources>
